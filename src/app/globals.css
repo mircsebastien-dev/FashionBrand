@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Arial Black", "Helvetica Neue", system-ui, sans-serif;
+}
+
+body {
+  @apply bg-brand-cream text-brand-black antialiased;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-black px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-brand-accent hover:scale-[1.03] active:scale-95 disabled:opacity-50 disabled:hover:bg-brand-black disabled:hover:scale-100;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand-black px-6 py-3 text-sm font-bold uppercase tracking-wider transition hover:bg-brand-black hover:text-white;
+}
+
+.input {
+  @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-brand-black focus:ring-2 focus:ring-brand-black/10;
+}
+
+.card {
+  @apply rounded-2xl bg-white p-6 shadow-sm;
+}
