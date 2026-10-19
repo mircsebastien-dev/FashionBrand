@@ -42,6 +42,10 @@ npm run dev
 
 Voir `.env.example`. En mode test, Stripe et PayPal utilisent des clés sandbox. Sans clés, PayPal simule le paiement en local.
 
+## Comptes de démonstration
+
+Le seed crée un compte admin : `admin@fashionbrand.fr` / `admin123` (à changer ou supprimer en production).
+
 ## Notes production
 
 - Basculer `provider` sur `postgresql` dans `prisma/schema.prisma`
